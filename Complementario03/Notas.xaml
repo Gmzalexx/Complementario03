@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Complementario03.Notas"
+             Title="Notas">
+    <StackLayout Padding="20">
+        <Label Text="Ingrese las calificaciones del alumno:" FontSize="Large" />
+
+        <!-- Agregamos unos entries para ingresar las 5 calificaciones solo que esta vez agregaremos un 
+        placeholder con el nombre nota1 nota2 nota3 etc con el keyboard numerico que este hara que cuando ingresemos a la app
+        nos pondra un teclado con numeros en nuestra pantalla-->
+        <Entry x:Name="nota1" Placeholder="nota 1" Keyboard="Numeric" />
+        <Entry x:Name="nota2" Placeholder="nota 2" Keyboard="Numeric" />
+        <Entry x:Name="nota3" Placeholder="nota 3" Keyboard="Numeric" />
+        <Entry x:Name="nota4" Placeholder="nota 4" Keyboard="Numeric" />
+        <Entry x:Name="nota5" Placeholder="nota 5" Keyboard="Numeric" />
+
+        <!-- Agregamos un butón para calcular el promedio haciendo un evento al xaml.cs -->
+        <Button Text="Calcular Promedio" Clicked="Button_Clicked" />
+
+        <!-- Agregamos una etiqueta para mostrar el resultado en la pantalla-->
+        <Label x:Name="resultadoLabel" FontSize="Large" />
+
+        <!--Por ultimo agregamos una img en nuestra app para que se vea mejor en nuestra app-->
+        <Image Source="C:\Users\Alexis\Documents\Practica 09\Complementario03\Complementario03\notas.jpg" WidthRequest="1280" HeightRequest="740" Aspect="AspectFit" />
+
+    </StackLayout>
+</ContentPage>
